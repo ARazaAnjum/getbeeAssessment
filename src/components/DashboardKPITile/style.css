@@ -1,0 +1,67 @@
+.kpi-data-tile-head-text {
+    font-weight: 400;
+    color: #6A6D7A;
+    font-size: 11px;
+}
+
+.kpi-data-tile-perc-text {
+    font-weight: 400;
+    color: #77E477;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.kpi-data-tile-perc-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.kpi-data-tile {
+    /* border-right: 1px #C3C5CA solid; */
+    border-top: 1px #C3C5CA solid;
+    border-bottom: 1px #C3C5CA solid;
+    padding: 32px 26px 20px 26px;
+    width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    .kpi-data-tile {
+        border-right: 1px #C3C5CA solid !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .kpi-data-tile {
+        width: 50%;
+        padding: 32px 0px 20px 10px;
+    }
+    .kpi-data-reading {
+        align-items: flex-start;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+    .kpi-value-text {
+        font-size: 20px !important;
+    }
+    .eclipse-icon {
+        align-self: center !important;
+    }
+    .kpi-data-chart {
+        padding: 32px 0px;
+    }
+    .search-input {
+        padding: 20px;
+    }
+}
+
+
+.kpi-value-text {
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 58px;
+    color: #1A1A1C;
+    margin-top: 32px;
+    word-wrap: break-word;
+    white-space: normal;
+}

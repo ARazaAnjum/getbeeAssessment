@@ -1,0 +1,52 @@
+.side-nav {
+    padding: 36px 32px;
+    border-right: 1px #C3C5CA solid;
+  }
+  .logo-container {
+      align-items: center;
+      justify-content: center;
+
+  }
+
+  .sidenav-row-icon{
+    height: 14px;
+    width: 14px;
+  } 
+
+  
+  .side-nav-btn-row{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 24px;
+  } 
+
+  .sidenav-row-header-text{
+    font-size: 12px;
+    line-height: 14px;
+    color: #6A6D7A;
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 24px;
+    padding-top: 40px;
+  }
+
+  .sidenav-row-text{
+    font-size: 13px;
+    line-height: 17px;
+    color: #6A6D7A;
+    margin: 0;
+    font-weight: normal;
+    padding-left: 15px;
+  } 
+  
+  .side-nav-btn-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .logo-img {
+    height: 50%;
+    width: 60%;
+    align-self: center;
+  }
