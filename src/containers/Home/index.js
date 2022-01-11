@@ -6,19 +6,33 @@ import { KPIsData, tableData } from '../../constants/data'
 function Home() {
     return (
         <div className='d-md-flex'>
-            <div className='d-none d-md-block col-md-3 col-lg-3'>
+            <div className='d-none d-md-block col-md-3 col-lg-3 side-nav-container'>
                 <Sidenav />
             </div>
 
             <div className='d-xs-12 d-sm-12 col-md-9 col-lg-9 body-container '>
+                <div className='d-flex d-md-none align-items-center mb-4'>
+                    <div style={{ width: '25%' }}>
+                        <img className='header-user-avatar' src={require('../../assets/icons/avatar.png')} />
+
+                    </div>
+                    <div style={{ width: '50%' }}>
+
+                        <img className='header-logo' src={require('../../assets/header-logo.png')} />
+                    </div>
+
+
+
+                </div>
                 <div className='d-md-flex header-container align-items-baseline justify-content-between'>
                     <h1 className='page-header-text'>Sales Data</h1>
                     <div className='d-none d-md-flex'>
                         <h1 className='mysales-data-text'>MY SALES DATA</h1>
                         <input type={'text'} placeholder='Search experts...' className='search-input' />
                         <button className='d-flex add-filter-btn'>
-                            <img className='add-filter-icon' src={require('../../assets/icons/filter.png')} />
-                            <h1 className='add-filter-text'>Add Filter</h1>
+                            <h1 className='add-filter-text' style={{ fontSize: '13px', color: '#6A6D7A', marginRight: '8px' }}>Period:</h1>
+                            <h1 className='add-filter-text' style={{ fontWeight: 'bold' }}>This Week</h1>
+                            <img className='add-filter-icon-down' src={require('../../assets/icons/arrow-down-filter.png')} />
                         </button>
                     </div>
                 </div>
@@ -33,6 +47,7 @@ function Home() {
                                 styles={{
                                     borderTop: [2, 3].indexOf(i) < 0 ? '1px #C3C5CA solid' : '0px',
                                     borderRight: [0, 2].indexOf(i) > -1 ? '1px #C3C5CA solid' : 'unset',
+                                    paddingLeft: [0, 2].indexOf(i) > -1 ? '0px' : '10px'
                                 }}
                                 heading={data.heading}
                                 value={data.value}
@@ -41,8 +56,8 @@ function Home() {
                             />)
                         })}
                     </div>
-                    <div className='kpi-data-chart'>
-                        <h1 className='d-block d-md-none kpi-data-chart-text'>Sessions</h1>
+                    <div className='row kpi-data-chart'>
+                        <h1 className='d-block d-md-none kpi-data-chart-text' style={{ marginLeft: '0px' }}>Sessions</h1>
                         <div className='d-none d-md-flex d-flex'>
                             <div className='d-flex align-items-center justify-content-center'>
                                 <div className='kpi-data-tile-dot-icon' />
@@ -59,7 +74,7 @@ function Home() {
                             <h1 className='kpi-data-chart-subval-text'>completed sessions</h1>
                         </div>
                     </div>
-                    <div className='d-block d-md-none session-info-mobile-container pt-2 pb-2'>
+                    <div className='row d-block d-md-none session-info-mobile-container pt-3 pb-3'>
                         <div className='d-flex justify-content-between'>
                             <div className='d-flex align-items-center justify-content-center'>
                                 <div className='kpi-data-tile-dot-icon' />
@@ -195,13 +210,14 @@ function Home() {
                 {/* Bottom Table Container End */}
 
                 {/* Bottom Table Container Mobile Start */}
-                <div className='d-block d-md-none bottom-table-container'>
+                <div className='row d-block d-md-none bottom-table-container'>
                     <div className='justify-content-between w-100'>
                         <div>
                             <h1 className='bottom-table-container-header'>Sessions</h1>
                             <h1 className='bottom-table-container-subheader'>Detailed table of sessions with our clients</h1>
                         </div>
                         <div className='d-flex search-filter-mobile'>
+                            <img className='search-filter-icon' src={require('../../assets/icons/search.png')} />
                             <input type={'text'} placeholder='Search experts...' className='search-input' />
                             <button className='d-flex add-filter-btn'>
                                 <img className='add-filter-icon' src={require('../../assets/icons/filter.png')} />
@@ -212,8 +228,8 @@ function Home() {
                     <div className='d-flex align-items-center justify-content-between mt-4'>
                         <h1 className='session-sortby-text'>Sort by:</h1>
                         <button className='d-flex session-sortby-btn align-items-center justify-content-center'>
-                            <h1 className='table-header-text' style={{ color: '#000' }}>Date</h1>
-                            <img className='table-header-icon' src={require('../../assets/icons/sort.png')} />
+                            <h1 className='table-header-text' style={{ color: '#000', fontWeight: 'bold' }}>Date</h1>
+                            <img className='table-header-icon' src={require('../../assets/icons/sort-black.png')} />
                         </button>
                         <button className='d-flex session-sortby-btn align-items-center justify-content-center'>
                             <h1 className='table-header-text'>Amount</h1>
@@ -267,7 +283,7 @@ function Home() {
                 <div className='d-flex'>
                     <input type={'text'} placeholder='Search experts...' className='search-input' />
                     <button className='d-flex add-filter-btn'>
-                        <h1 className='add-filter-text'>Period</h1>
+                        <h1 className='add-filter-text' style={{ fontWeight: 'bold' }}>Period</h1>
                         <img className='add-filter-icon ml-1' src={require('../../assets/icons/arrow-down-filter.png')} />
                     </button>
                 </div>

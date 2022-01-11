@@ -2,10 +2,29 @@
     padding: 20px 40px;
 }
 
+.search-filter-icon {
+    height: 12px;
+    width: 12px;
+    position: absolute;
+}
+
+.side-nav-container {
+    width: 20% !important;
+}
 .kpi-data-container {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.header-logo {
+    width: 97.89px;
+    height: 26px;
+}
+
+.header-user-avatar {
+    width: 40px;
+    height: 40px;
 }
 
 .kpi-data-chart {
@@ -86,7 +105,7 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 17px;
-    margin-left: 10px;
+    margin-left: 5px;
     color: #6A6D7A;
 }
 
@@ -101,6 +120,7 @@
 
     .kpi-container {
         display: block !important;
+        margin-top: 40px !important;
     }
 
     .kpi-data-chart {

@@ -5,7 +5,7 @@
 }
 
 .kpi-data-tile-perc-text {
-    font-weight: 400;
+    font-weight: 700;
     color: #77E477;
     font-size: 11px;
     font-weight: bold;
@@ -28,12 +28,18 @@
     .kpi-data-tile {
         border-right: 1px #C3C5CA solid !important;
     }
+    .add-filter-icon-down {
+        height: 6px !important;
+        width: 6px  !important;
+        margin-left: 8px !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .kpi-data-tile {
         width: 50%;
-        padding: 32px 0px 20px 10px;
+        height: 114px;
+        padding: 20px 0px 20px 10px;
     }
     .kpi-data-reading {
         align-items: flex-start;
@@ -41,17 +47,29 @@
         display: flex;
         flex-direction: column;
     }
+    .kpi-data-tile-perc-cont {
+        margin-top: 9px;
+    }
     .kpi-value-text {
         font-size: 20px !important;
+        margin-top: 0px !important;
     }
     .eclipse-icon {
         align-self: center !important;
     }
     .kpi-data-chart {
-        padding: 32px 0px;
+        padding: 15px 0px;
     }
     .search-input {
         padding: 20px;
+    }
+    .row {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .kpi-data-chart-val-text{
+        font-size: 20px;
+        font-weight: 600;
     }
 }
 

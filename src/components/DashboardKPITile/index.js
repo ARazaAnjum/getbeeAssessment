@@ -6,7 +6,7 @@ function DashboardKPITile(props) {
         <div className='col-xs-3 col-sm-3 col-md-6 col-lg-6 kpi-data-tile ' style={props.styles}>
             <div className='d-md-flex justify-content-between kpi-data-reading'>
                 <h1 className='kpi-data-tile-head-text'>{heading}</h1>
-                <div className='d-flex align-items-center justify-content-center'>
+                <div className='d-flex align-items-center justify-content-center kpi-data-tile-perc-cont'>
                     <img className='kpi-data-tile-perc-icon' src={icon} />
                     <h1 className='kpi-data-tile-perc-text' style={{
                         color: isNegative ? '#FC5D5B' : '#77E477'
